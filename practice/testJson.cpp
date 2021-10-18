@@ -90,23 +90,24 @@ string simulationRecv3(){
     return js.dump();
 }
 int main(){
+    //test1
     //string recvBuf = simulationRecv1();
-
+    //test2
     //string recvBuf = simulationRecv2();
-
+    //test3
     string recvBuf = simulationRecv3();
 
     json jsbuf = json::parse(recvBuf);
-
+    //test1
     //cout<<jsbuf["msg_type"]<<endl;
     //cout<<jsbuf["from"]<<endl;
     //cout<<jsbuf["to"]<<endl;
     //cout<<jsbuf["msg"]<<endl;
-
+    //test2
     //cout<<jsbuf["id"]<<endl;
     //auto arr = jsbuf["id"];
     //cout<<arr[2]<<endl;
-
+    //test3
     vector<int> vec = jsbuf["list"];
     for(auto &v:vec){
         cout<<v<<' ';
